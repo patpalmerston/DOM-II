@@ -166,10 +166,21 @@ destination.getElementsByTagName('p')[2].addEventListener('mouseout', function(e
 
 destination.getElementsByTagName('p')[2].addEventListener('mousemove', function(event) {
   event.target.style.color = 'black';
+  eventObject.stopPropagation();
 });
 
-const whole = document.querySelector("container home");
-whole.addEventListener('click', function(event) {
-event.target.style.backgroundColor = 'red';
-})
-console.log(whole);
+
+// const navDefault = document.querySelectorAll('nav a');
+
+// navDefault.addEventListener('click', function(event){
+//   event.preventDefault();
+// })
+
+
+
+
+/* --------------- */
+
+
+TweenMax.to(document.getElementsByTagName('header'), 1, {left:200});
+
