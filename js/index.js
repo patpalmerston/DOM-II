@@ -182,5 +182,6 @@ destination.getElementsByTagName('p')[2].addEventListener('mousemove', function(
 /* --------------- */
 
 
-TweenMax.to(document.getElementsByTagName('header'), 1, {left:200});
+TweenMax.to('.main-navigation h1', 10, {x:600, rotation:360, scale:0.5});
+
 
